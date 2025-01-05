@@ -34,7 +34,7 @@ class RateLimiter {
 const rateLimiter = new RateLimiter(20); // Increased to 20 requests per minute for Flash model
 
 async function fetchAnswerFromGeminiAI(question) {
-    const apiKey = 'AIzaSyB4n0GIfPxuYInqkq0okaUTTbeDAdGRLog';
+    const apiKey = 'YOUR_API_KEY';
     // Changed to use the Flash model instead of Pro
     const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
     const maxRetries = 5;
